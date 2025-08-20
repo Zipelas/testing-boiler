@@ -1,5 +1,5 @@
 import CounterButton from './components/CounterButton';
-import DateComponent from './components/Date';
+import DayComponent from './components/Day';
 import MonthComponent from './components/Month';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
         <MonthComponent date={new Date()} />
       </div>
       <div>
-        <DateComponent date={new Date()} />
+        <DayComponent date={new Date()} />
       </div>
     </div>
   );
