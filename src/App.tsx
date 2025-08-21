@@ -1,6 +1,10 @@
-import CounterButton from './components/CounterButton';
+// import CounterButton from './components/CounterButton';
+import DatePicker from './components/DatePicker';
 import DayComponent from './components/Day';
 import MonthComponent from './components/Month';
+import MovieList from './components/MovieList';
+import ResetButton from './components/ResetButton';
+import { movies } from './movies';
 
 function App() {
   return (
@@ -15,6 +19,20 @@ function App() {
       </div>
       <div className='bg-pink-300 text-[#663399] text-6xl text-center p-4'>
         <DayComponent date={new Date()} />
+      </div>
+      <div>
+        <div>
+          <DatePicker
+            selectedDate={new Date().toISOString().split('T')[0]}
+            onDateChange={(date) => date}
+          />
+        </div>
+        <div>
+          <MovieList movies={movies} />
+        </div>
+      </div>
+      <div>
+        <ResetButton />
       </div>
     </>
   );
