@@ -1,10 +1,8 @@
-import React from 'react';
-
 interface MovieListProps {
   movies: string[];
 }
 
-const MovieList: React.FC<MovieListProps> = ({ movies }) => {
+function MovieList({ movies }: MovieListProps) {
   if (movies.length === 0) {
     return <p className='text-center'>Inga filmer hittades.</p>;
   }
@@ -16,6 +14,6 @@ const MovieList: React.FC<MovieListProps> = ({ movies }) => {
       ))}
     </ul>
   );
-};
+}
 
 export default MovieList;
