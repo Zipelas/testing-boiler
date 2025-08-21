@@ -2,6 +2,7 @@ import CounterButton from './components/CounterButton';
 import DatePicker from './components/DatePicker';
 import DayComponent from './components/Day';
 import MonthComponent from './components/Month';
+import { movies } from './movies';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             onDateChange={(date) => date}
           />
         </div>
+        
       </div>
     </>
   );
