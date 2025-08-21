@@ -1,4 +1,3 @@
-// src/movies.ts
 export const movies: string[] = [
   "Pirates of the Caribbean",
   "Sagan om ringen",
