@@ -3,6 +3,7 @@ import DatePicker from './components/DatePicker';
 import DayComponent from './components/Day';
 import MonthComponent from './components/Month';
 import MovieList from './components/MovieList';
+import ResetButton from './components/ResetButton';
 import { movies } from './movies';
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           <MovieList movies={movies} />
         </div>
       </div>
+
     </>
   );
 }
