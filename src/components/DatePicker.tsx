@@ -1,14 +1,9 @@
-import React from 'react';
-
 interface DatePickerProps {
   selectedDate: string;
   onDateChange: (date: string) => void;
 }
 
-const DatePicker: React.FC<DatePickerProps> = ({
-  selectedDate,
-  onDateChange,
-}) => {
+function DatePicker({ selectedDate, onDateChange }: DatePickerProps) {
   return (
     <div className='flex justify-center my-4'>
       <input
@@ -23,6 +18,6 @@ const DatePicker: React.FC<DatePickerProps> = ({
       />
     </div>
   );
-};
+}
 
 export default DatePicker;
