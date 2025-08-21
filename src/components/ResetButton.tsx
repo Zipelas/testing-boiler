@@ -1,10 +1,8 @@
-import React from 'react';
-
 interface ResetButtonProps {
   onReset: () => void;
 }
 
-const ResetButton: React.FC<ResetButtonProps> = ({ onReset }) => {
+function ResetButton({ onReset }: ResetButtonProps) {
   return (
     <div className='flex justify-center my-4'>
       <button
@@ -14,6 +12,6 @@ const ResetButton: React.FC<ResetButtonProps> = ({ onReset }) => {
       </button>
     </div>
   );
-};
+}
 
 export default ResetButton;
