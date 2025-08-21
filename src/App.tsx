@@ -31,7 +31,9 @@ function App() {
           <MovieList movies={movies} />
         </div>
       </div>
-
+      <div>
+        <ResetButton />
+      </div>
     </>
   );
 }
