@@ -11,5 +11,9 @@ describe('MovieList', () => {
     expect(items).toHaveLength(movies.length);
   });
 
+  it('renders fallback text if no movies', () => {
+    render(<MovieList movies={[]} />);
 
+    expect(screen.getByText(/Inga filmer hittades./i)).toBeInTheDocument();
+  });
 });
