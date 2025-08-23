@@ -29,7 +29,12 @@ function App() {
 
   return (
     <div className='max-w-md mx-auto p-4'>
-      <h1 className='text-2xl font-bold text-center mb-4'>🎬 Filmlista</h1>
+      <h1 className='text-2xl font-bold text-center mb-4 text-[#663399]'>
+        Vite + React
+      </h1>
+      <h2 className='text-2xl font-bold text-center mb-4 text-[#663399]'>
+        🎬 Filmlista
+      </h2>
       <DatePicker
         selectedDate={selectedDate}
         onDateChange={handleDateChange}
