@@ -3,7 +3,11 @@ interface MonthProps {
 }
 
 function MonthComponent({ date }: MonthProps) {
-  return <span>{getMonthName(date)}</span>;
+  return (
+    <div className='text-[#663399] text-4xl text-center'>
+      {getMonthName(date)}
+    </div>
+  );
 }
 
 function getMonthName(date: Date): string {

@@ -8,7 +8,7 @@ function MovieList({ movies }: MovieListProps) {
   }
 
   return (
-    <ul className='list-disc list-inside space-y-1'>
+    <ul className='list-disc list-inside space-y-1 max-h-70 overflow-y-auto'>
       {movies.map((movie, idx) => (
         <li key={idx}>{movie}</li>
       ))}

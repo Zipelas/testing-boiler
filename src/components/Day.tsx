@@ -3,7 +3,11 @@ interface DayProps {
 }
 
 function DayComponent({ date }: DayProps) {
-  return <span>{getDayName(date)}</span>;
+  return (
+    <div className='text-[#663399] text-4xl text-center'>
+      {getDayName(date)}
+    </div>
+  );
 }
 
 function getDayName(date: Date): string {
