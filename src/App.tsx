@@ -9,13 +9,13 @@ import { movies } from './movies';
 import { getRandomMovies } from './utils';
 
 function App() {
-  const today = new Date().toISOString().split('T')[0]; // dagens datum (yyyy-mm-dd)
+  const today = new Date().toISOString().split('T')[0];
 
   const [selectedDate, setSelectedDate] = useState<string>(today);
   const [displayedMovies, setDisplayedMovies] = useState<string[]>(movies);
 
   useEffect(() => {
-    setDisplayedMovies(movies); // visa alla filmer vid start
+    setDisplayedMovies(movies);
   }, []);
 
   function handleDateChange(date: string) {
@@ -36,34 +36,36 @@ function App() {
       <h2 className='text-2xl font-bold text-center mb-4 text-[#663399]'>
         🎬 Filmlista
       </h2>
-      <div className='flex justify-center p-6 space-x-6'>
-        <div>
+
+      <div className='flex flex-col md:flex-row justify-center p-6 md:space-x-6 space-y-6 md:space-y-0'>
+        <div className='w-full md:w-auto flex justify-center md:block'>
           <DatePicker
             selectedDate={selectedDate}
             onDateChange={handleDateChange}
           />
         </div>
-        <div className='border-2 rounded-4xl border-[#663399] text-[#663399] font-bold inline-block p-4'>
+
+        <div className='w-full md:w-auto border-2 rounded-3xl border-[#663399] text-[#663399] font-bold inline-block p-4'>
           <MovieList movies={displayedMovies} />
         </div>
       </div>
-      <div className='flex w-full p-6'>
-        {/* vänster (datumboxen) */}
-        <div className='flex-1'>
-          <div className='border-2 rounded-4xl border-[#663399] inline-block px-6 py-2'>
-            <DayComponent date={new Date()} />
-            <DateComponent date={new Date()} />
-            <MonthComponent date={new Date()} />
+
+      <div className='w-full p-6'>
+        <div className='grid grid-cols-1 md:grid-cols-3 items-center gap-6'>
+          <div className='justify-self-start'>
+            <div className='border-2 rounded-3xl border-[#663399] inline-block px-6 py-2'>
+              <DayComponent date={new Date()} />
+              <DateComponent date={new Date()} />
+              <MonthComponent date={new Date()} />
+            </div>
           </div>
-        </div>
 
-        {/* mitten (ResetButton centrerad i sin kolumn) */}
-        <div className='flex-1 flex justify-center items-center'>
-          <ResetButton onReset={handleReset} />
-        </div>
+          <div className='justify-self-center'>
+            <ResetButton onReset={handleReset} />
+          </div>
 
-        {/* höger (tom för nu, men kan fyllas med annat senare) */}
-        <div className='flex-1'></div>
+          <div className='hidden md:block' />
+        </div>
       </div>
     </div>
   );
