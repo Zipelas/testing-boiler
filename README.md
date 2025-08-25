@@ -11,15 +11,15 @@ Nedan finns listor på enhetstester och integrationstester.
 
 ### Enhetstester
 
-DateComponent.test.tsx (2 tests)
-MovieList.test.tsx (2 tests)
-ResetButton.test.tsx (3 tests)
-DeleteButton.test.tsx (3 tests)
-CounterButton.test.tsx (2 tests)
-App.test.tsx (1 test)
-DatePicker.test.tsx (1 test)
-Month.test.tsx (1 test)
-Day.test.tsx (1 test)
+• DateComponent.test.tsx (2 tests)
+• MovieList.test.tsx (2 tests)
+• ResetButton.test.tsx (3 tests)
+• DeleteButton.test.tsx (3 tests)
+• CounterButton.test.tsx (2 tests)
+• App.test.tsx (1 test)
+• DatePicker.test.tsx (1 test)
+• Month.test.tsx (1 test)
+• Day.test.tsx (1 test)
 
 ### Integrationstester
 
