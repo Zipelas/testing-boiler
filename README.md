@@ -1,4 +1,27 @@
-# Kodbas för Enhets- och integrationstestning av React komponenter.
+README
+
+# Testning - Uppgift 1.
+
+## Beskrivning
+
+Det här projektet är byggt med Vite, React och Tailwind. Jag har skapat komponenterna DateComponent, Day och Month som visar datum, veckodag och månad. Utöver det har jag skapat komponenterna DatePicker, Movielist och ResetButtton.
+Med DatePicker väljer du ett datum. I Movielist visas en lista på filmer dels genom valt datum eller hela listan som standard. ResetButton återställer DatePicker till dagens datum och Movielist så att den visar hela listan.
+
+Nedan finns listor på enhetstester och integrationstester.
+
+### Enhetstester
+
+DateComponent.test.tsx (2 tests)
+MovieList.test.tsx (2 tests)
+ResetButton.test.tsx (3 tests)
+DeleteButton.test.tsx (3 tests)
+CounterButton.test.tsx (2 tests)
+App.test.tsx (1 test)
+DatePicker.test.tsx (1 test)
+Month.test.tsx (1 test)
+Day.test.tsx (1 test)
+
+### Integrationstester
 
 ## Installation
 
