@@ -34,3 +34,7 @@ Kör `npm run dev` för att starta utvecklingsservern.
 ## Testning
 
 Kör `npm test` för att köra testerna.
+
+## Coverage
+
+Kör `npm run coverage` för att se coverage
