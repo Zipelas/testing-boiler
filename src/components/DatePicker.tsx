@@ -6,7 +6,13 @@ interface DatePickerProps {
 function DatePicker({ selectedDate, onDateChange }: DatePickerProps) {
   return (
     <div className='flex justify-center my-4'>
+      <label
+        htmlFor='date-input'
+        className='sr-only'>
+        Datum
+      </label>
       <input
+        id='date-input'
         type='date'
         value={selectedDate}
         onChange={(e) => onDateChange(e.target.value)}
