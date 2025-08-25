@@ -33,4 +33,4 @@ Kör `npm run dev` för att starta utvecklingsservern.
 
 ## Testning
 
-Kör `npm test` för att köra testerna. Kan köras utan att utvecklingsservern är igång.
+Kör `npm test` för att köra testerna.
