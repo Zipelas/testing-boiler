@@ -9,7 +9,7 @@ Med DatePicker väljer du ett datum. I Movielist visas en lista på filmer dels 
 
 Nedan finns listor på enhetstester och integrationstester.
 
-### Enhetstester
+### Enhetstester + Ingrationstester
 
 - DateComponent.test.tsx (2 tests)
 - MovieList.test.tsx (5 tests)
@@ -19,7 +19,9 @@ Nedan finns listor på enhetstester och integrationstester.
 - Month.test.tsx (1 test)
 - Day.test.tsx (1 test)
 
-### Integrationstester
+### Coverage
+
+![alt text](coverage.png)
 
 ## Installation
 
